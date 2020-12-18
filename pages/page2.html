@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>html basic course</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="icon" type="../image/png" href="../images/icon.jpg" />
+    <script src="../js/main.js"></script>
+</head>
+
+<body>
+    <header>
+
+        <div id="navbar" class="nav">
+            <a href="https://www.sololearn.com/Courses/"> <img class="header-logo" src="../images/logo.png"
+                    alt="aici este logoul"></a>
+            <a href="../index.html"><img class="header-logo" src="../images/home.png" alt="Aici este logoul home"></a>
+            <a href="page1.html"><img class="header-logo" src="../images/page1.jpg" alt="Aici este logoul pagina 1"></a>
+            <a href="page2.html"><img class="header-logo active" src="../images/q.png"
+                    alt="Aici este logoul pagina 2"></a>
+            <a href="page3.html"><img class="header-logo" src="../images/play.jpg" alt="Aici este logoul pagina 3"></a>
+            <a href="log.html"><img class="header-logo" src="../images/login.jpg" alt="Aici este logoul login"></a>
+            <!--<a href="../index.html"><img class="header-logo" src="../images/page4.jpg" alt="Aici este logoul pagina 4"></a>
+        <a href="../index.html"><img class="header-logo" src="../images/page5.png" alt="Aici este logoul pagina 5"></a>
+        <a href="../index.html"><img class="header-logo" src="../images/page6.png" alt="Aici este logoul pagina 6"></a>
+        <a href="../index.html"><img class="header-logo" src="../images/page7.png" alt="Aici este logoul pagina 7"></a>
+        <a href="../index.html"><img class="header-logo" src="../images/page8.png" alt="Aici este logoul pagina 8"></a>
+        <a href="../index.html"><img class="header-logo" src="../images/page9.jpg" alt="Aici este logoul pagina 9"></a>
+        <a href="../index.html"><img class="header-logo" src="../images/page10.jpg"
+                alt="Aici este logoul pagina 10"></a>
+        <img src="../images/logo.png" class="header-logo_right" alt="aici este logoul">-->
+
+            <a class="hamburger-menu" onclick="mobileMenu()"><img src="../images/hamburger.png" height="25px"
+                    alt="hamburger menu"></i></a>
+
+        </div>
+    </header>
+
+    <article>
+        <div class="row">
+            <div class="col-3">
+                <img src="../images/521.png" height="200px" alt="logoul  html">
+            </div>
+            <div class="col-4">
+                <form action="geralid98@gmail.com">
+                    <h2><b>Testul Nr:1</b></h2>
+                    <label for="nume">Numele:</label><br />
+                    <input class="input-box" type="text" name="nume" id="nume" placeholder="Numele" required><br />
+                    <label for="prenume">Prenumele:</label><br />
+                    <input class="input-box" type="text" name="prenume" id="prenume" placeholder="Prenumele"
+                        required><br />
+                    <label for="clasa">Clasa:</label><br />
+                    <select>
+                        <option value="VII">VII</option>
+                        <option value="VIII">VIII</option>
+                        <option value="IX">IX</option>
+                    </select><br /><br />
+                    <label for="q1">Ce tip de limbaj este HTML:</label><br />
+                    <input class="input-box" type="text" name="q1" id="q1" placeholder="de..." required><br />
+                    <label for="q2">Este obligatoriu conținutul elementului?</label><br />
+                    <input class="input-box" type="text" name="q2" id="q2" placeholder="Da sau Nu" required><br />
+                    <label for="q3">Cum este marcat tagul de deschidere?</label><br />
+                    <input class="input-box" type="text" name="q3" id="q3" placeholder="?" required><br />
+                    <label for="q4">Cum este marcat tagul de închidere?</label><br />
+                    <input class="input-box" type="text" name="q4" id="q4" placeholder="?" required><br />
+                    <label for="q5">Atributul este obligatoriu într-un element?</label><br />
+                    <input class="input-box" type="text" name="q5" id="q5" placeholder="da sau nu" required><br />
+
+                </form>
+            </div>
+            <div class="col-3">
+                <img src="../images/521.png" height="200px" alt="logoul  html">
+            </div>
+
+        </div>
+
+
+
+
+        </div>
+
+        <audio controls>
+            <source src="../music/1.mp3" type="audio/mp3" />
+            <source src="../music/1.ogg" type="audio/ogg" />
+            <p>Browserul nu susține formatul dat de sunet. </p>
+        </audio>
+    </article>
+
+    <footer>
+        <div class="row">
+            <div class="col-4">
+                <p>Lincuri utile</p>
+                <a href="https://abcode.dev" target=”_blank”>Cursuri limbaje de programare Md</a><br />
+                <a href="https://www.sololearn.com/Courses/" target=”_parent”> Cursuri
+                    Sololearn</a><br />
+                <a href="https://www.youtube.com/channel/UCajk1jidrqGwRacgq7rgi2Q/videos" target=”_blank”>Limbajul C
+                    pentru
+                    începători</a><br />
+            </div>
+            <div class="col-2">
+                <h5>Data de astăzi: <span id="data"></span>/<span id="luna"></span>/<span id="anul"></span></h5>
+                <h5>Ora: <span id="ora"></span>:<span id="min"></span></h5>
+            </div>
+            <div class="col-4">
+                <p>Descarca</p>
+                <a href="https://code.visualstudio.com/Download" target=”_blank”> Visual Studio Code</a><br />
+                <a href="https://sourceforge.net/projects/notepadplusplus.mirror/files/"
+                    target=”_blank”>Notepad++</a><br />
+                <a href="https://sourceforge.net/projects/codeblocks/files/Binaries/" target=”_blank”>Code blocks</a>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

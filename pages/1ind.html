@@ -1,0 +1,67 @@
+<html>
+
+<head>
+    <script type="text/javascript">
+        // Cream matricea care va stoca imaginile, in variabila pics
+        browserOK = true;
+        var pics = new Array();
+        // -->
+    </script>
+    <script type="text/javascript">
+        var objCount = 0; // numarul imaginilor care semodifica in pagina web
+        // Functia pentru preancarcarea imaginilor, le introduce intrun masiv
+        function preload(name, first, second) {
+            if (browserOK) {
+                pics[objCount] = new Array(3);
+                pics[objCount][0] = new Image();
+                pics[objCount][0].src = first;
+                pics[objCount][1] = new Image();
+
+                pics[objCount][1].src = second;
+                pics[objCount][2] = name;
+                objCount++;
+            }
+        }
+
+        function on(name) {
+            if (browserOK) {
+                for (i = 0; i < objCount; i++) {
+                    if (document.images[pics[i][2]] != null)
+                        if (name != pics[i][2]) {
+                            document.images[pics[i][2]].src = pics[i][0].src;
+                        } else {
+                            // afiseaza cea de-a doua imagine la pozitionareacursorului deasupra acesteia
+                            document.images[pics[i][2]].src = pics[i][1].src;
+                        }
+                }
+            }
+        }
+
+        function off() {
+            if (browserOK) {
+                for (i = 0; i < objCount; i++) {
+                    // trimite in spate toate imaginile
+                    if (document.images[pics[i][2]] != null)
+                        document.images[pics[i][2]].src = pics[i][0].src;
+                }
+            }
+        }
+        // preincarca imaginilor
+        preload("link1", "../images/4.jpg", "../images/page1.jpg");
+        preload("link2", "../images/8.jpg", "../images/4.jpg");
+        preload("link3", "../images/page1.jpg", "../images/8.jpg");
+        // -->
+    </script>
+</head>
+
+<body>
+    <a href="adresa1.htmll" onMouseOver="on('link1')" onMouseOut="off()">
+        <img name="link1" src="../images/4.jpg" width="150" height="150" border="0"></a> &nbsp;
+    <a href="adresa2.html" onMouseOver="on('link2')" onMouseOut="off()">
+        <img name="link2" src="../images/8.jpg" width="150" height="150" border="0"></a> &nbsp;
+
+    <a href="adresa2.html" onMouseOver="on('link3')" onMouseOut="off()">
+        <img name="link3" src="../images/page1.jpg" width="150" height="150" border="0"></a>
+</body>
+
+</html>
